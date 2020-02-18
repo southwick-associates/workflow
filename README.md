@@ -16,7 +16,7 @@ remotes::install_github("southwick-associates/workflow")
 
 See the vignettes:
 
-- TODO: [Setting up a new project](github-vignettes/setup-project.md)
+- TODO: [Setting up a workflow](github-vignettes/setup-project.md)
 - [Writing multiple results to one Excel workbook](github-vignettes/write-excel.md)
 
 ## Development

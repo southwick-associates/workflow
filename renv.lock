@@ -65,13 +65,6 @@
       "Repository": "CRAN",
       "Hash": "dc0030cea0d85397ba3ba5b930c82c6a"
     },
-    "dplyr": {
-      "Package": "dplyr",
-      "Version": "0.8.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "3ecb1deedd4c4ad6ebf4605d263616f2"
-    },
     "ellipsis": {
       "Package": "ellipsis",
       "Version": "0.3.0",

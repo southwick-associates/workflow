@@ -8,8 +8,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-library(dplyr)
-library(workflow)
 ```
 
 ## Overview
@@ -21,7 +19,6 @@ The workflow package includes convenience functions for writing to Excel. This c
 The first step is to create an Excel workbook using `xlsx_initialize_workbook()`. This makes an Excel file with a single "README" tab. I recommend always including a README for documentation (to be edited manually in Excel).
 
 ```{r}
-library(dplyr)
 library(workflow)
 
 xlsx_initialize_workbook("tmp.xlsx")
@@ -34,7 +31,7 @@ R data frames can be written directly to an Excel file with `xlsx_write_table()`
 
 ```{r}
 # create some data
-poem <- tibble(verse = "All that is gold does not glitter")
+poem <- data.frame(verse = "All that is gold does not glitter", stringsAsFactors = FALSE)
 
 xlsx_write_table(poem, "tmp.xlsx")
 openxlsx::getSheetNames("tmp.xlsx")
