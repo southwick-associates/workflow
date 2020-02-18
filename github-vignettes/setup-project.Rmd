@@ -1,0 +1,20 @@
+---
+output: github_document
+---
+<!-- setup-project.md is generated from setup-project.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(dplyr)
+library(workflow)
+```
+
+## Overview
+
+```{r}
+library(dplyr)
+library(implan)
+```

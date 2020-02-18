@@ -1,0 +1,17 @@
+Package: workflow
+Type: Package
+Title: Streamline R project workflows
+Version: 0.1
+Author: Dan Kary
+Maintainer: Dan Kary <dan@southwickassociates.com>
+Description: Provides a template for R-based project analysis with some common
+    functions for streamlining the processing.
+License: For Southwick use only
+Depends: R (>= 3.5.0)
+Imports:
+    openxlsx,
+    rmarkdown,
+    tools
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.0.2
