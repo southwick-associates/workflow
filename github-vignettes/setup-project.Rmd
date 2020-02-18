@@ -8,13 +8,37 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-library(dplyr)
-library(workflow)
 ```
 
 ## Overview
 
+I recommend as the first step, opening RStudio: File > New Project (and checking "Create a git repository"). You might also be creating a new repository in github: https://github.com/southwick-associates
+
+### Use package renv
+
+This isolates the R version and packages used for this project from your other projects.
+
 ```{r}
-library(dplyr)
-library(implan)
+# install if you don't have this package
+renv::init()
 ```
+
+### Populate with Template Files
+
+Use `workflow::init()` to populate the project with template files
+
+```{r}
+install.packages("remotes")
+remotes::install_github("southwick-associates/workflow")
+workflow::init()
+```
+
+### Run scripts
+
+Use `workflow::run()` to source R scripts with log files stored as .md (use `workflow::run_html()` to store as .html)
+
+```{r}
+# write some code to an R file
+workflow::run("code/1-test.R")
+```
+
