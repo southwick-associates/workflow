@@ -7,7 +7,7 @@ To set up a new project:
 
 1. [Create a project with Rstudio](#create-project)
 2. [Isolate from other projects with package renv](#define-your-software-environment)
-3. [Populate template package workflow](#initialize-workflow)
+3. [Make template files/folders with package workflow](#initialize-workflow)
 
 ## 1. Create Project
 
