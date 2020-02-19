@@ -4,7 +4,7 @@
 \alias{init}
 \title{Initiliaze a project workflow}
 \usage{
-init(dir = "", overwrite = FALSE)
+init(dir = getwd(), overwrite = FALSE)
 }
 \arguments{
 \item{dir}{Folder to place template files. Defaults to working directory.}

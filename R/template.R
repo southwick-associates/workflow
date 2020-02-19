@@ -12,7 +12,7 @@
 #' init("tmp")
 #' init("tmp", overwrite = TRUE)
 #' }
-init <- function(dir = "", overwrite = FALSE) {
+init <- function(dir = getwd(), overwrite = FALSE) {
     template_files <- list.files(
         system.file("template-init", package = "workflow"), full.names = TRUE
     )
