@@ -21,8 +21,6 @@ See the vignettes:
 
 ### TODO
 
-- `workflow_init()` to create default set of files for a project
-- template Rmd analysis for github (markdown) and html variants
 - vignette
 
 ## Development
