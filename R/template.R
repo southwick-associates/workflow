@@ -21,7 +21,9 @@ init <- function(dir = "", overwrite = FALSE) {
         stop("The init function won't overwrite existing files unless overwrite = TRUE",
              call. = FALSE)
     }
-    if (!file.exists(dir)) dir.create(dir)
+    if (!file.exists(dir) && dir != "") {
+        dir.create(dir)
+    }
     for (i in template_files) {
         file.copy(i, dir, overwrite = overwrite, recursive = TRUE)
     }
