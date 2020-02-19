@@ -5,9 +5,9 @@
 
 The workflow package is intended to add some consistency/efficiency for
 R-based analysis projects. I’ve provided guidelines below for
-structuring Southwick projects, but I don’t consider these hard-and-fast
-rules. My thinking on this workflow was heavily influenced by a
-Python-based approach: [Cookiecutter Data
+structuring Southwick projects, but these aren’t hard-and-fast rules. My
+thinking on this workflow was heavily influenced by a Python-based
+approach: [Cookiecutter Data
 Science](https://drivendata.github.io/cookiecutter-data-science/).
 
 I follow 3 steps for new projects:
