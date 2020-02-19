@@ -1,0 +1,19 @@
+---
+title: "An Example Analysis for github rendering"
+date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.kable.NA = '')
+```
+
+## Overview
+
+This analysis multiplies two vectors:
+
+```{r}
+1:10 * 11:20
+```
+

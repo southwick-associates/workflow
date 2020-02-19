@@ -1,7 +1,7 @@
 Package: workflow
 Type: Package
 Title: Streamline R project workflows
-Version: 0.1
+Version: 0.2
 Author: Dan Kary
 Maintainer: Dan Kary <dan@southwickassociates.com>
 Description: Provides a template for R-based project analysis with some common

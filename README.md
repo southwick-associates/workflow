@@ -19,6 +19,12 @@ See the vignettes:
 - TODO: [Setting up a workflow](github-vignettes/setup-project.md)
 - [Writing multiple results to one Excel workbook](github-vignettes/write-excel.md)
 
+### TODO
+
+- `workflow_init()` to create default set of files for a project
+- template Rmd analysis for github (markdown) and html variants
+- vignette
+
 ## Development
 
 See the [R packages book](http://r-pkgs.had.co.nz/) for a guide to package development. The software environment was specified using [package renv](https://rstudio.github.io/renv/index.html). Use `renv::restore()` to build the project library.
