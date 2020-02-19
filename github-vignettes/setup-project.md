@@ -23,7 +23,7 @@ I recommend creating an [RStudio
 Project](https://r4ds.had.co.nz/workflow-projects.html) as a first step
 (in RStudio: File \> New Project):
 
-![](img/new-project.png)
+![](img/my-project.png)
 
 I also suggest checking “Create a git repository” in case you want to
 use version control (and it will also set you up for placing the project
