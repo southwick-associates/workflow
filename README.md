@@ -1,7 +1,7 @@
 
 # workflow
 
-A Southwick-only R package to streamline workflow development.
+A Southwick-only R package to streamline R-based analyses.
 
 ## Installation
 

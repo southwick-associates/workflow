@@ -10,20 +10,31 @@ rules. My thinking on this workflow was heavily influenced by a
 Python-based approach: [Cookiecutter Data
 Science](https://drivendata.github.io/cookiecutter-data-science/).
 
+I follow 3 steps for new projects:
+
+1.  [Create a project with Rstudio](#create-project)
+2.  [Initialize with package workflow](#initialize-workflow)
+3.  [Isolate from other projects with package
+    renv](#define-your-software-environment)
+
 ## 1\. Create Project
 
 I recommend creating an [RStudio
 Project](https://r4ds.had.co.nz/workflow-projects.html) as a first step
-(in RStudio: File \> New Project) and suggest checking “Create a git
-repository” in case you want to use version control (and it will also
-set you up for placing the project on Github). If you’re new to Git,
-there is a [nice intro chapter](http://r-pkgs.had.co.nz/git.html) in
-Hadley Wickham’s R packages book.
+(in RStudio: File \> New Project):
+
+![](img/new-project.png)
+
+I also suggest checking “Create a git repository” in case you want to
+use version control (and it will also set you up for placing the project
+on Github). If you’re new to Git, there is a [nice intro
+chapter](http://r-pkgs.had.co.nz/git.html) in Hadley Wickham’s R
+packages book.
 
 ## 2\. Initialize Workflow
 
-Next, you’ll use `workflow::init()` to populate the project with a
-default organization:
+Next, you’ll use `workflow::init()` to populate the project with
+template files/folders:
 
 ![](img/init.png)
 
@@ -46,8 +57,7 @@ I like organizing data into 4 subfolders:
 
 A master script is a nice way to organize your code. I recommend using
 regular `.R` files for production code and ordering them sequentially
-(e.g., `01-load-raw.R`, `02-clean.R`, etc.). I consider `.Rmd` files
-better-suited to summary reports.
+(e.g., `01-load-raw.R`, `02-clean.R`, etc.).
 
 ![](img/run.png)
 
@@ -58,7 +68,15 @@ produces a log summary that displays nicely on Github:
 
 ![](img/example.png)
 
-## Define your Software Environment
+### Rmd Templates
+
+I consider `.Rmd` files better-suited to summary reports. Note that this
+package includes a couple of templates which you can access in Rstudio
+using File \> New File \> R Markdown:
+
+![](img/rmd-template.png)
+
+## 3\. Define your Software Environment
 
 I recommend using [package
 renv](https://rstudio.github.io/renv/index.html) to isolate your project
