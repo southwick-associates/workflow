@@ -1,0 +1,27 @@
+
+<!-- setup-project.md is generated from setup-project.Rmd. Please edit that file -->
+
+## Overview
+
+The workflow package is intended to add some consistency/efficiency for
+R-based analysis projects. I’ve provided a template below for
+structuring Southwick projects, but I don’t consider these hard-and-fast
+rules. My thinking on this workflow was heavily influenced by a
+Python-based approach: [Cookiecutter Data
+Science](https://drivendata.github.io/cookiecutter-data-science/).
+
+## 1\. Create Project
+
+I recommend creating an [RStudio
+Project](https://r4ds.had.co.nz/workflow-projects.html) as a first step
+(in RStudio: File \> New Project). I suggest you check “Create a git
+repository” in case you want to use version control (and it will also
+set you up for placing the project on Github). If you’re new to Git,
+there is a [nice intro chapter](http://r-pkgs.had.co.nz/git.html) in
+Hadley Wickham’s R packages book.
+
+## 2\. Project Template
+
+Next, you’ll use `workflow::init()` to populate the project with a
+template structure. This should create a set of folders/files that look
+like this:
