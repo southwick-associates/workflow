@@ -35,25 +35,26 @@ remotes::install_github("southwick-associates/workflow")
 renv::snapshot()
 ```
 
-Create a template workflow with `workflow::init()`. The project will be populated with a standard set of files and folders.
+Create a template workflow with `workflow::init()`.
 
-```
+```r
 workflow::init()
-```
 
-```
-README.md       # project-level documentation
-code/
-  example.R
-  example.Rmd
-  run.R         # master script
-data/
-  README.md     # data documentation
-  external/     # input data from public sources (e.g., Census)
-  interim/      # intermediate data
-  processed/    # final data
-  raw/          # input data from internal sources (e.g., surveys)
-out/            # output for deliverables (tables, figures, etc.)
+#> Template files/folders have been added to:
+#> - D:/SA/Project/my-project
+
+#> README.md       # project-level documentation
+#> code/
+#>   example.R
+#>   example.Rmd
+#>   run.R         # master script
+#> data/
+#>   README.md     # data documentation
+#>   external/     # input data from public sources (e.g., Census)
+#>   interim/      # intermediate data
+#>   processed/    # final data
+#>   raw/          # input data from internal sources (e.g., surveys)
+#> out/            # output for deliverables (tables, figures, etc.)
 ```
 
 ### README.md
