@@ -1,9 +1,9 @@
 
 # Overview
 
-The workflow package is intended to add consistency/efficiency to R-based analyses. I've provided workflow guidelines below, but these aren't hard-and-fast rules. My thinking on this process was heavily influenced by an approach from DrivenData: [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). 
+The workflow package is intended to add consistency/efficiency to R-based analyses. These aren't rules, rather they're what I consider good defaults. My thinking was influenced by [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). See [B4W-19-01](https://github.com/southwick-associates/B4W-19-01) for a moderately complex project that follows these guidelines.
 
-To set up a new project:
+## Steps
 
 1. [Create a project with Rstudio](#create-project)
 2. [Isolate from other projects with package renv](#define-your-software-environment)
@@ -11,7 +11,7 @@ To set up a new project:
 
 ## 1. Create Project
 
-Make an [RStudio Project](https://r4ds.had.co.nz/workflow-projects.html). In RStudio: File > New Project. I suggest checking "Create a git repository" in case you want to use version control (and it will also set you up for placing the project on Github). If you're new to Git, there is a [nice intro chapter](http://r-pkgs.had.co.nz/git.html) in Hadley Wickham's R packages book.
+Make an [RStudio Project](https://r4ds.had.co.nz/workflow-projects.html) (in RStudio: File > New Project). I suggest checking "Create a git repository" in case you want to use version control (and it will also set you up for placing the project on Github). If you're new to Git, there is a [nice intro chapter](http://r-pkgs.had.co.nz/git.html) in Hadley Wickham's R packages book.
 
 ![](img/my-project.png)
 
@@ -43,9 +43,20 @@ workflow::init()
 renv::snapshot() # record project library changes after package installations
 ```
 
-### New Files:
+This includes a set of files, bla, bla, bla...
 
-![](img/init.png)
+```
+README.md       project-level documentation
+code/
+  run.R         master script
+data/
+  README.md     data documentation
+  external/     input data from public sources (e.g., Census)
+  interim/      intermediate data
+  processed/    final data
+  raw/          input data from internal sources (e.g., surveys)
+out/            output for deliverables (tables, figures, etc.)
+```
 
 ### README.md
 
