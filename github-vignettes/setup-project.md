@@ -43,18 +43,18 @@ workflow::init()
 #> Template files/folders have been added to:
 #> - D:/SA/Project/my-project
 
-#> README.md       # project-level documentation
 #> code/
 #>   example.R
 #>   example.Rmd
 #>   run.R         # master script
 #> data/
-#>   README.md     # data documentation
 #>   external/     # input data from public sources (e.g., Census)
 #>   interim/      # intermediate data
 #>   processed/    # final data
 #>   raw/          # input data from internal sources (e.g., surveys)
+#>   README.md     # data documentation
 #> out/            # output for deliverables (tables, figures, etc.)
+#> README.md       # project-level documentation
 ```
 
 ### README.md
