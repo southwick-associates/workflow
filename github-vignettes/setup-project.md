@@ -42,7 +42,6 @@ workflow::init()
 
 #> Template files/folders have been added to:
 #> - D:/SA/Project/my-project
-
 #> code/
 #>   example.R
 #>   example.Rmd
