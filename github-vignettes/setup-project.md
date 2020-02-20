@@ -3,11 +3,11 @@
 
 The workflow package is intended to add consistency/efficiency to R-based analyses. These aren't rules, rather they're what I consider good defaults. My thinking was influenced by [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). See [B4W-19-01](https://github.com/southwick-associates/B4W-19-01) for a moderately complex project that follows these guidelines.
 
-## Steps
+### 3 Steps:
 
-1. [Create a project with Rstudio](#create-project)
-2. [Isolate from other projects with package renv](#define-your-software-environment)
-3. [Make template files/folders with package workflow](#initialize-workflow)
+1. Create a project with Rstudio
+2. Isolate from other projects with package renv
+3. Make template files/folders with package workflow
 
 ### 1. Create Project
 
