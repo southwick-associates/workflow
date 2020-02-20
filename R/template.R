@@ -27,4 +27,6 @@ init <- function(dir = getwd(), overwrite = FALSE) {
     for (i in template_files) {
         file.copy(i, dir, overwrite = overwrite, recursive = TRUE)
     }
+    message(paste0("Template files/folders have been added to:\n- ", dir))
+    writeLines(readLines(system.file("template-files.txt", package = "workflow")))
 }
