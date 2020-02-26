@@ -18,7 +18,7 @@ Make an [RStudio Project](https://r4ds.had.co.nz/workflow-projects.html) (in RSt
 
 ### 2. Isoloate Project Packages
 
-Use [package renv](https://rstudio.github.io/renv/index.html) to isolate your project package libraries and help ensure the code can be run on another machine. Running `renv::init()` adds a few more files which renv will use (and you shouldn't edit by hand). The `renv.lock` file defines the project's package versions, which enables installation on another machine with `renv::restore()`.
+Use [package renv](https://rstudio.github.io/renv/index.html) to isolate your project package libraries and help ensure the code can be run on another machine. Running `renv::init()` adds a few more files which renv will use (and you shouldn't edit by hand). You can use `renv::restore()` to install the project library on another machine.
 
 ```r
 install.packages("renv")
@@ -42,6 +42,7 @@ workflow::init()
 
 #> Template files/folders have been added to:
 #> - D:/SA/Project/my-project
+#> 
 #> code/
 #>   example.R
 #>   example.Rmd
