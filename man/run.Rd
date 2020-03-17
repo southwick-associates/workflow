@@ -3,21 +3,41 @@
 \name{run}
 \alias{run}
 \alias{run_html}
-\title{Source an R script, storing rendered output as .md in a log subfolder}
+\alias{run_rmd}
+\alias{run_rmd_html}
+\title{Source an R script, storing rendered output as md or html in a log subfolder}
 \usage{
-run(script_path)
+run(script_path, knit_root_dir = getwd())
 
-run_html(script_path)
+run_html(script_path, knit_root_dir = getwd())
+
+run_rmd(script_path, knit_root_dir = NULL)
+
+run_rmd_html(script_path, knit_root_dir = NULL)
 }
 \arguments{
 \item{script_path}{file path of R script to be executed}
+
+\item{knit_root_dir}{The working directory in which to knit the document;
+uses knitr's \code{root.dir} knit option. If \code{NULL} then the behavior
+will follow the knitr default, which is to use the parent directory of the
+document.}
 }
 \description{
-Uses \code{\link[rmarkdown]{render}} to create a log of the sourced script.
-The markdown output is formatted in a way that works well for github. If not
-using github, you may want to use \code{\link{run_html}} instead.
+Uses \code{\link[rmarkdown]{render}} to create a log of the sourced script:
+\itemize{
+  \item Use run() with .R files to format the log output in a way that works 
+  well for github (markdown)
+  \item Use run_html() with .R files for a log output formatted as html, which
+  works better for viewing within Rstudio
+  \item Use run_rmd() for .Rmd files to markdown
+  \item Use run_rmd_html() for .Rmd files to html
+}
 }
 \examples{
 # workflow::run("path/to/script.R")
+# workflow::run_html("path/to/script.R")
+# workflow::run_rmd("path/to/script.Rmd")
+# workflow::run_rmd_html("path/to/script.Rmd")
 }
 \concept{functions to run scripts}

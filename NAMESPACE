@@ -3,5 +3,7 @@
 export(init)
 export(run)
 export(run_html)
+export(run_rmd)
+export(run_rmd_html)
 export(xlsx_initialize_workbook)
 export(xlsx_write_table)
