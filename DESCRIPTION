@@ -4,8 +4,7 @@ Title: Streamline R project workflows
 Version: 1.1
 Author: Dan Kary
 Maintainer: Dan Kary <dan@southwickassociates.com>
-Description: Provides a template for R-based project analysis with some common
-    functions for streamlining the processing.
+Description: Provides a template for R-based project analysis with some common functions.
 License: For Southwick use only
 URL: https://github.com/southwick-associates/workflow
 Depends: R (>= 3.5.0)
