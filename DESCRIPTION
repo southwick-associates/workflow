@@ -5,7 +5,7 @@ Authors@R: c(
     person("Dan", "Kary", , "Rsoftware@SouthwickAssociates.com", role = c("aut", "cre")),
     person("Southwick Associates", role = c("cph", "fnd"))
     )
-Description: Provides template and common functions for R projects.
+Description: Provides template and common functions for R analysis projects.
 License: Southwick only
 Encoding: UTF-8
 LazyData: FALSE
