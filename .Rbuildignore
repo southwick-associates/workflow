@@ -6,3 +6,4 @@
 ^github-vignettes$
 ^\.Rprofile$
 ^tmp$
+^\.gitignore$
