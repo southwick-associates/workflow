@@ -1,18 +1,20 @@
 Package: workflow
 Type: Package
-Title: Streamline R project workflows
-Version: 1.1
-Author: Dan Kary
-Maintainer: Dan Kary <dan@southwickassociates.com>
-Description: Provides a template for R-based project analysis with some common functions.
-License: For Southwick use only
+Title: Streamline project workflows
+Version: 1.1.0
+Authors@R: c(
+    person("Dan", "Kary", , "Rsoftware@SouthwickAssociates.com", role = c("aut", "cre")),
+    person("Southwick Associates", role = c("cph", "fnd"))
+    )
+Description: Provides template and common functions for R projects.
+License: Southwick only
 URL: https://github.com/southwick-associates/workflow
-Depends: 
-  R (>= 3.5.0)
-Imports:
-  openxlsx,
-  rmarkdown,
-  tools
 Encoding: UTF-8
-LazyData: false
+LazyData: FALSE
+Depends:
+    R (>= 3.5)
+Imports:
+    openxlsx,
+    rmarkdown,
+    tools
 RoxygenNote: 7.1.0
