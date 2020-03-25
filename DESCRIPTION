@@ -1,5 +1,4 @@
 Package: workflow
-Type: Package
 Title: Streamline project workflows
 Version: 1.1.0
 Authors@R: c(
@@ -8,11 +7,9 @@ Authors@R: c(
     )
 Description: Provides template and common functions for R projects.
 License: Southwick only
-URL: https://github.com/southwick-associates/workflow
 Encoding: UTF-8
 LazyData: FALSE
-Depends:
-    R (>= 3.5)
+Depends: R (>= 3.5)
 Imports:
     openxlsx,
     rmarkdown,
