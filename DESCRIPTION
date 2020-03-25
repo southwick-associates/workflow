@@ -1,5 +1,5 @@
 Package: workflow
-Title: Streamline project workflows
+Title: Streamline Project Workflows
 Version: 1.1.0
 Authors@R: c(
     person("Dan", "Kary", , "Rsoftware@SouthwickAssociates.com", role = c("aut", "cre")),
